@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.HelloController">
+   <right>
+      <AnchorPane prefHeight="426.0" prefWidth="320.0" style="-fx-background-color: #6a9ae7;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="123.0" layoutY="81.0" prefHeight="28.0" prefWidth="166.0" text="Se connecter" textFill="#4b5b90">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="156.0" text="Email" textFill="#4b5b90">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="209.0" text="Mot de passe" textFill="#4b5b90">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Email" layoutX="109.0" layoutY="151.0" prefHeight="28.0" prefWidth="220.0" promptText="Email" style="-fx-background-radius: 20;" />
+            <Button fx:id="btnConnecter" layoutX="109.0" layoutY="265.0" mnemonicParsing="false" onAction="#btnConnecterOnAction" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #30363f; -fx-background-radius: 50; -fx-cursor: hand;" text="Connecter" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAnnuler" layoutX="109.0" layoutY="311.0" mnemonicParsing="false" onAction="#btnAnnulerOnAction" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #30363f; -fx-background-radius: 50; -fx-cursor: hand;" text="Annuler" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="messagelabl1" alignment="CENTER" layoutX="4.0" layoutY="123.0" prefHeight="18.0" prefWidth="345.0" textFill="#e40e0e" />
+            <PasswordField fx:id="password" layoutX="111.0" layoutY="204.0" prefHeight="28.0" prefWidth="220.0" promptText="Mot de passe" style="-fx-background-radius: 20;" />
+            <Button fx:id="btnInscrire" layoutX="145.0" layoutY="390.0" onAction="#btnInscrireOnAction" style="-fx-cursor: hand; -fx-background-color: #6a9ae7;" text="s'inscrire" textFill="#4b5b90" />
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="233.0" style="-fx-background-color: #426fb1;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="219.0" prefHeight="18.0" prefWidth="247.0" text="Centre Des Kinésithérapies">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="156.0" layoutY="264.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="298.0" prefHeight="18.0" prefWidth="239.0" text="WIMKIN">
+               <font>
+                  <Font name="Traditional Arabic Bold" size="18.0" />
+               </font>
+            </Label>
+            <Circle fill="#426fb154" layoutX="156.0" layoutY="262.0" radius="104.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#080b2857" layoutX="69.0" layoutY="206.0" radius="13.0" stroke="#00000029" strokeType="INSIDE" />
+            <ImageView fitHeight="196.0" fitWidth="266.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logoConn1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

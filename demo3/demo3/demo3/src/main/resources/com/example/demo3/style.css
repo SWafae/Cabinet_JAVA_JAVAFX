@@ -1,0 +1,55 @@
+
+.button:hover{
+    -fx-background-color: #38DDF3;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: #4b5b90;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+    -fx-cursor: hand;
+}
+.button:pressed
+{
+    -fx-background-color :#4b5b90;
+}
+
+.home{
+
+    -fx-background-image: url(background1.png);
+    -fx-background-size: cover;
+}
+
+
+
+.button1:hover{
+    -fx-background-color: #4b5b90;
+    /* -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+     -fx-background-radius: 20px, 20px, 20px, 20px;
+     //-fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; 4 8 4 8 */
+    -fx-background-radius: 20px, 20px, 20px, 20px;
+    -fx-text-fill: #ffff;
+    -fx-alignment: CENTER;
+    -fx-cursor: hand;
+}
+
+
+
+.button1{
+    -fx-background-color: #ffff;
+    /* -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+     //-fx-background-radius: 3px, 3px, 2px, 1px;
+     //-fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; 4 8 4 8 */
+    -fx-text-fill: #000;
+    -fx-alignment: CENTER;
+    -fx-cursor: hand;
+}
+
+
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+

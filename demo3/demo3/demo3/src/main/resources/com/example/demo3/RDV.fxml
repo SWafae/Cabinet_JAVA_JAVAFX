@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.RdvControl">
+   <content>
+      <AnchorPane prefHeight="910.0" prefWidth="1184.0" style="-fx-background-color: white;">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutY="-4.0" prefHeight="910.0" prefWidth="400.0" style="-fx-background-color: #28c2ec;" stylesheets="@style.css">
+               <children>
+                  <VBox layoutX="10.0" layoutY="184.0" prefHeight="198.0" prefWidth="404.0">
+                     <children>
+                        <ImageView fitHeight="162.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@1200px-Male_Doctor_Flat_Icon_Vector.svg.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="0.0" prefWidth="346.0" />
+                  <Button fx:id="btnAccueil" alignment="BASELINE_LEFT" graphicTextGap="40.0" layoutX="10.0" layoutY="359.0" mnemonicParsing="false" onAction="#AccueilAction" prefHeight="56.0" prefWidth="361.0" style="-fx-background-color: #28c2ec;" text="Accueil" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@HomeIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="65.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnPatients" alignment="BASELINE_LEFT" graphicTextGap="40.0" mnemonicParsing="false" onAction="#PatientAction" prefHeight="56.0" prefWidth="361.0" style="-fx-background-color: #28c2ec;" text="Patients" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@patient12354.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="65.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnKine" alignment="BASELINE_LEFT" graphicTextGap="40.0" layoutX="10.0" layoutY="527.0" mnemonicParsing="false" onAction="#KineAction" prefHeight="56.0" prefWidth="361.0" style="-fx-background-color: #28c2ec;" text="Kinésithérapeutes" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@iconePat.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="68.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="bntMed" alignment="BASELINE_LEFT" graphicTextGap="40.0" layoutX="10.0" layoutY="504.0" mnemonicParsing="false" onAction="#MedAction" prefHeight="56.0" prefWidth="361.0" style="-fx-background-color: #28c2ec;" text="Medecins" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@MedecinIcone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="68.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnRDV" alignment="BASELINE_LEFT" graphicTextGap="40.0" mnemonicParsing="false" onAction="#RdvAction" prefHeight="56.0" prefWidth="361.0" style="-fx-background-color: #28c2ec;" text="Rendez-Vous" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@RDV.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="68.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnSeance" alignment="BASELINE_LEFT" graphicTextGap="40.0" mnemonicParsing="false" onAction="#SeanceAction" prefHeight="56.0" prefWidth="361.0" style="-fx-background-color: #28c2ec;" text="Séances" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@seance123456789.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="68.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnFacture" alignment="BASELINE_LEFT" graphicTextGap="40.0" mnemonicParsing="false" onAction="#FactureAction" prefHeight="56.0" prefWidth="361.0" style="-fx-background-color: #28c2ec;" text="Facture" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@facture123456789.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="68.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnProgres" alignment="BASELINE_LEFT" graphicTextGap="40.0" layoutX="10.0" layoutY="476.0" mnemonicParsing="false" onAction="#ProgresAction" prefHeight="56.0" prefWidth="361.0" style="-fx-background-color: #28c2ec;" text="Progrès" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Picturep22.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="68.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnClose" alignment="BASELINE_LEFT" graphicTextGap="40.0" layoutX="10.0" layoutY="448.0" mnemonicParsing="false" onAction="#CloseAction" prefHeight="56.0" prefWidth="361.0" style="-fx-background-color: #28c2ec;" text="Se déconnecter" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="67.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            <Pane fx:id="pnUser" layoutX="400.0" layoutY="-4.0" prefHeight="734.0" prefWidth="1242.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Pane layoutX="21.0" layoutY="20.0" prefHeight="642.0" prefWidth="734.0" style="-fx-border-color: #D6EFF3; -fx-border-radius: 15;">
+                     <children>
+                        <HBox layoutX="297.0" layoutY="21.0" prefHeight="46.0" prefWidth="166.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" text="Rendez-vous" textAlignment="CENTER" textFill="#1a4eb5">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="22.0" layoutY="67.0" prefHeight="275.0" prefWidth="317.0" style="-fx-border-color: #D6EFF3; -fx-border-radius: 15;">
+                           <children>
+                              <Label layoutX="15.0" layoutY="33.0" prefHeight="17.0" prefWidth="85.0" text="id Patient" />
+                              <TextField fx:id="idPat" layoutX="115.0" layoutY="29.0" prefHeight="25.0" prefWidth="176.0" />
+                              <Label layoutX="22.0" layoutY="73.0" text="id Seance" />
+                              <TextField fx:id="idsean" layoutX="116.0" layoutY="68.0" prefHeight="25.0" prefWidth="175.0" />
+                              <Label layoutX="25.0" layoutY="111.0" text="Heure" />
+                              <Label layoutX="29.0" layoutY="153.0" text="Date" />
+                              <DatePicker fx:id="d" layoutX="116.0" layoutY="149.0" />
+                              <TextField fx:id="h" layoutX="115.0" layoutY="107.0" prefHeight="25.0" prefWidth="176.0" />
+                              <Button fx:id="btnAjouter" alignment="BASELINE_LEFT" graphicTextGap="40.0" layoutX="71.0" layoutY="219.0" mnemonicParsing="false" onAction="#btnAjouterAction" prefHeight="42.0" prefWidth="176.0" style="-fx-border-color: #0A3AC4; -fx-border-radius: 20; -fx-cursor: hand;" styleClass="button1" stylesheets="@style.css" text="Ajouter">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@add.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                              </Button>
+                              <Label fx:id="msg1" alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="189.0" prefHeight="17.0" prefWidth="313.0" textFill="#12bc61" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="380.0" layoutY="78.0" prefHeight="264.0" prefWidth="317.0" style="-fx-border-color: #D6EFF3; -fx-border-radius: 15;">
+                           <children>
+                              <Button fx:id="btnSupprimer" alignment="BASELINE_LEFT" graphicTextGap="40.0" layoutX="77.0" layoutY="101.0" mnemonicParsing="false" onAction="#btnSupprimerAction" prefHeight="42.0" prefWidth="176.0" style="-fx-border-color: #0A3AC4; -fx-border-radius: 20; -fx-cursor: hand;" styleClass="button1" stylesheets="@style.css" text="Supprimer ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@delete.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                              </Button>
+                              <Label layoutX="118.0" layoutY="21.0" text="id Rendez-vous" />
+                              <TextField fx:id="idRdv" layoutX="91.0" layoutY="47.0" />
+                              <Label fx:id="msg2" alignment="CENTER" contentDisplay="CENTER" layoutY="74.0" prefHeight="17.0" prefWidth="314.0" textFill="#12b960" />
+                              <Button fx:id="btnAfficher" alignment="BASELINE_LEFT" graphicTextGap="40.0" layoutX="79.0" layoutY="162.0" mnemonicParsing="false" onAction="#btnAfficherAction" prefHeight="42.0" prefWidth="176.0" style="-fx-border-color: #0A3AC4; -fx-border-radius: 20; -fx-cursor: hand;" styleClass="button1" stylesheets="@style.css" text="Afficher">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@32329.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <TableView fx:id="tab" layoutX="220.0" layoutY="391.0" prefHeight="200.0" prefWidth="295.0">
+                           <columns>
+                              <TableColumn fx:id="idPa" prefWidth="75.0" text="id Patient" />
+                              <TableColumn fx:id="idSean" prefWidth="75.0" text="id Séance" />
+                              <TableColumn fx:id="dt" prefWidth="75.0" text="Date" />
+                              <TableColumn fx:id="hr" prefWidth="75.0" text="Heure" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
